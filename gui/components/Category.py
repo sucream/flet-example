@@ -66,7 +66,7 @@ class DropDownContainer(ft.UserControl):
                 ft.DataRow(
                     cells=[
                         ft.DataCell(ft.Text(value=created_news.title)),
-                        ft.DataCell(ft.TextButton(text=created_news.url, on_click=lambda e: e.page.launch_url(created_news.url)),),
+                        ft.DataCell(ft.TextButton(text=created_news.url, on_click=self.open_url),),
                         ft.DataCell(ft.Text(value=created_news.publisher)),
                     ]
                 )
@@ -151,7 +151,7 @@ class Category(ft.UserControl):
         """
         하나의 카테고리를 나타내는 컨트롤
         """
-        
+
         super().__init__()
         self.category_id = category_id
         self.category_name = category_name
