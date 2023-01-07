@@ -1,0 +1,18 @@
+[tool.poetry]
+name = "gui"
+version = "0.1.0"
+description = ""
+authors = ["sucream <ghdskatnghds@gmail.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.9,<3.12"
+flet = "^0.3.2"
+SQLAlchemy = "^1.4.46"
+pyinstaller = "^5.7.0"
+beautifulsoup4 = "^4.11.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
